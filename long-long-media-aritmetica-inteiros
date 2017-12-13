@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    long long a,b,c,d,e,f,g,h,i,j,l,m,n,o,p,q,r,s,t,u,v,media;
+
+    setlocale(LC_ALL, "Portuguese");
+
+    cout << "\n" << "Média aritmética de números reais:" << "\n" << "\n";
+    cout << "Determine os valores envolvidos no cálculo matemático." << "\n";
+    cout << "Os valores devem ser maiores que -9223372036854775807 e menores que 9223372036854775807" << "\n" << "\n";
+
+    cout << "Determine o valor : ";
+    cin >> a;
+
+    cout << "Determine o valor: ";
+    cin >> b;
+
+    cout << "Determine o valor: ";
+    cin >> c;
+
+    cout << "Determine o valor: ";
+    cin >> d;
+
+    cout << "Determine o valor: ";
+    cin >> e;
+
+    cout << "Determine o valor: ";
+    cin >> f;
+
+    cout << "Determine o valor: ";
+    cin >> g;
+
+    cout << "Determine o valor: ";
+    cin >> h;
+
+    cout << "Determine o valor: ";
+    cin >> i;
+
+    cout << "Determine o valor: ";
+    cin >> j;
+
+    media = (a+b+c+d+e+f+g+h+i+j)/10;
+
+    cout << "\n";
+
+    cout << "Resultado: "<< media << "\n" <<endl;
+}
