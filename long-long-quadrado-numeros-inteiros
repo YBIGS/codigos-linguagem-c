@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double a, b;
+
+    setlocale(LC_ALL, "Portuguese");
+
+    cout << "\n" << "Quadrado de números inteiros:" << "\n" << "\n";
+    cout << "Determine o valor envolvidos no cálculo matemático." << "\n";
+    cout << "Ou a quantidade de inteiros devem ser maiores que -9223372036854775807 e menores que 9223372036854775807" << "\n" << "\n";
+
+    cout << "Determine o valor: ";
+    cin >> a;
+
+    cout << "\n";
+
+    cout << "Resultado: "<< a * a << "\n" <<endl;
+}
