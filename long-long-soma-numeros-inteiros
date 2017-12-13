@@ -8,7 +8,7 @@ int main() {
 
     cout << "\n" << "Soma de números inteiros:" << "\n" << "\n";
     cout << "Determine os valores envolvidos no cálculo matemático." << "\n";
-    cout << "Os valores devem ser maiores que -9223372036854775807 e menores que 9223372036854775807" << "\n";
+    cout << "Os valores devem ser maiores que -9223372036854775807 e menores que 9223372036854775807" << "\n" << "\n";
 
     cout << "Determine primeiro valor: ";
     cin >> a;
