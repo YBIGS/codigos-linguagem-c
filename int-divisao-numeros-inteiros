@@ -15,6 +15,8 @@ int main() {
 
     cout << "Determine segundo valor: ";
     cin >> b;
+    
+    cout << "\n";
 
     cout << "Resultado: "<< a / b << "\n" <<endl;
 }
