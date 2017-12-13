@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+
+    setlocale(LC_ALL, "Portuguese");
+
+    cout << "\n" << "Divisão de números inteiros:" << "\n" << "\n";
+    cout << "Determine os valores envolvidos no cálculo matemático." << "\n";
+    cout << "Os valores devem ser maiores que -2147483647 e menores que 2147483647" << "\n";
+
+    cout << "Determine primeiro valor: ";
+    cin >> a;
+
+    cout << "Determine segundo valor: ";
+    cin >> b;
+
+    cout << "Resultado: "<< a / b << "\n" <<endl;
+}
