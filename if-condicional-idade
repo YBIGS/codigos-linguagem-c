@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    long long a;
+
+    setlocale(LC_ALL, "Portuguese");
+
+    cout << "\n" << "Informe a idade: ";
+    cin >> a;
+
+    if (a >= 18){
+      cout << "\n" << "Passagem liberada" <<  endl;
+    }
+    else {
+      cout << "\n" << "Passagem negada" <<  endl;
+    }
+
+
+    cout << "\n";
+}
