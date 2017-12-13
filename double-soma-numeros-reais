@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double a, b;
+
+    setlocale(LC_ALL, "Portuguese");
+
+    cout << "\n" << "Soma de números reais:" << "\n" << "\n";
+    cout << "Determine os valores envolvidos no cálculo matemático." << "\n";
+    cout << "A quantidade de decimais não devem ser maiores que 3.25364758697014"  << "\n" << "\n";
+
+    cout << "Determine primeiro valor: ";
+    cin >> a;
+
+    cout << "Determine segundo valor: ";
+    cin >> b;
+
+    cout << "\n";
+
+    cout << "Resultado: "<< a + b << "\n" <<endl;
+}
