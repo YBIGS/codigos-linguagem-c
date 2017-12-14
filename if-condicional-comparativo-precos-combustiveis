@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+  float A,G,Ra,Rg;
+  setlocale(LC_ALL, "Portuguese");
+
+  cout << "\n" << "Comparativo de preços de combustíveis." << "\n" ;
+  cout << "\n" << "Informe os preços referente a alcool e gasolina, alem da quilometragem respectivamente." << "\n";
+
+  cout << "\n" << "Preço do alcool:";
+  cin >> A;
+
+  cout << "Preço da gasolina:";
+  cin >> G;
+
+  cout << "Quilometragem com alcool:";
+  cin >> Ra;
+
+  cout << "Quilometragem com gasolina:" ;
+  cin >> Rg;
+
+  cout << "\n";
+
+  if(A/Ra < G/Rg)
+    cout << "Melhor escolha é o alcool." << "\n";
+
+  else
+    cout << "Melhor escolha é a gasolina." << "\n";
+
+  return 0;
+}
