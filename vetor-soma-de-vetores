@@ -1,0 +1,53 @@
+//Sua tarefa neste problema e ler dizer qual a soma de dois vetores de mesmo tamanho.
+//Para dois vetores A e B temos que se A + B = C, entao para cada posicao i temos que C[i] = A[i] + B[i].
+
+//Entrada
+//A primeira linha consiste em um inteiro N, o tamanho dos dois vetores.
+//A segunda linha contem N valores, correspondentes ao vetor A.
+//A terceira linha contem N valores, correspondentes ao vetor B.
+
+//Saıda
+//Voce deve imprimir em uma ´unica linha o vetor C, com os valores separados por um espaco em branco.
+
+//Limites
+//• 1 ≤ N ≤ 100
+//• 1 ≤ A[i], B[i] ≤ 100
+
+//for = faz contagem dos vetores
+//for = determina tamanho vetores
+//for + cin = insere contagem no vetor
+
+#include <iostream>
+using namespace std;
+int main()
+{
+  int i;
+  int n;
+
+
+  cin >> n;
+  float A[n], B[n], C[n];
+
+
+
+  for(i=0; i < n; i=i+1){
+
+    cin >> A[i];
+  }
+
+  for(i=0; i < n; i=i+1){
+
+    cin >> B[i];
+  }
+  for(i=0; i < n; i=i+1){
+    C[i] = A[i] + B[i];
+  }
+
+  for(i=0; i < n; i=i+1){
+	cout << C[i]<<" ";
+  }
+
+  cout << "\n";
+
+  return 0;
+}
