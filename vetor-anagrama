@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+  int t;
+  int n;
+  int i;
+  int x, y, w;
+
+  cin >> n;
+  char v [n];
+
+  for(i = 0; i < n; i++){
+    cin >> v [i];
+  }
+
+  cin >> t;
+  //troca de valores
+  for(i = 0; i < t; i++){
+    cin >> x >> y;
+    w = v[x];
+    v[x] = v[y];
+    v[y] = w;
+  }
+  for(i = 0; i < n; i++){
+    cout << v[i];
+  }
+  return 0;
+}
