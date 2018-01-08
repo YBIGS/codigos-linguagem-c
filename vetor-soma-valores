@@ -2,17 +2,17 @@
 using namespace std;
  
 int main(void) {
-	
-	int V[4];   // Define an array of four integers
-        int i;
+	int i, n;
+	int V[n];   // Define an array of four integers
+       
 	// Get inputs for the array elements
-	for (i=0; i<4; i++) {
+	for (i = 0; i < n; i++) {
     	cin >> V[i];
 	}
     
 	int soma = 0;
 	// Write the logic to add these integers here:
-    for (i=0; i<4; i++){
+    for (i = 0; i < n; i++){
         soma = soma + V[i];
     }
  
