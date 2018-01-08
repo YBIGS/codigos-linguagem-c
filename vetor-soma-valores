@@ -16,7 +16,7 @@ int main(void) {
         soma = soma + V[i];
     }
  
-	cout << sum << endl;// Print the sum
+	cout << soma << endl;// Print the sum
     
 	return 0;
 }
