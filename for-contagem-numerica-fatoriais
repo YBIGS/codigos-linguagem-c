@@ -1,0 +1,25 @@
+#include <iostream> 
+#include <iomanip> 
+using std::cout; 
+using std::cin; 
+using std::endl; 
+using std::setw; 
+ 
+int main() { 
+  int count = 0; 
+  cout << endl << "Digite um valor entre 0 e 20, sendo 20 o valor limete para calculos fatoriais? "; 
+  cin >> count; 
+ 
+  cout << endl 
+       << " Número"                    
+       << "            Fatorial" 
+       << endl; 
+ 
+  for(long n = 1, fatorial = 1 ; 
+                     fatorial *= n, n <= count ; n++) 
+    cout << setw(4) <<  n   << "   " 
+         << setw(15) << "  " << fatorial 
+         << endl; 
+  return 0; 
+} 
+ 
