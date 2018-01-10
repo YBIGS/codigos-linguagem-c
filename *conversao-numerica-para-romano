@@ -1,0 +1,37 @@
+//Código de terceiros
+
+#include <iostream>
+using namespace std;
+
+typedef struct _MyStruct {
+    const int number;
+    const char* rom;
+} MyStruct;
+
+void toRomanian(int n);
+
+int main() {
+    cout << "Enter number: ";
+    int n;
+    cin >> n;
+    toRomanian(n);
+    return 0;
+}
+
+void toRomanian(int n) {
+    MyStruct dict[] = {
+        {1000, "M"}, {900, "CM"}, {500, "D"}, {400, "CD"}, {100, "C"}, {90, "LC"}, {50, "L"},
+        {40, "XL"}, {10, "X"}, {9, "IX"}, {5, "V"}, {4, "IV"}, {1, "I"}
+    };
+    
+    int len = sizeof(dict) / sizeof(dict[0]);
+    
+    for (int i = 0; i < len; i++) {
+        while (n >= dict[i].number) {
+            n -= dict[i].number;
+            cout << dict[i].rom;
+        }
+    }
+    
+    cout << endl;
+}
