@@ -1,0 +1,36 @@
+#include <iostream>
+#include <algorithm>   // used for sort()
+using namespace std;
+
+
+bool Palindrome(string str)
+{
+    
+    int mid = str.length() / 2;
+    int delim = (str.length() % 2) == 0 ? mid : mid + 1;
+
+    string first_half = str.substr(0, mid);
+    string second_half = str.substr(delim);
+
+    sort(first_half.begin(), first_half.end());
+    sort(second_half.begin(), second_half.end());
+
+    return first_half == second_half;
+}
+
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+    
+    string teste;
+    cout<<"Digite a palavra: \n";
+    getline(cin, teste);
+ 
+    if (Palindrome(teste))
+       cout<<"É Palíndrome.\n";
+    else
+       cout<<"Não é palíndrome.\n";
+
+    return 0;
+}
