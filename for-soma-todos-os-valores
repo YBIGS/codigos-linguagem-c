@@ -1,0 +1,22 @@
+#include <iostream> 
+using std::cin; 
+using std::cout; 
+using std::endl; 
+ 
+int main() { 
+  int sum = 0;                        // Accumulates the sum of integers 
+  int count = 0;                      // The number to sum 
+ 
+  cout << "Quantos números inteiros deseja somar? "; 
+  cin >> count; 
+ 
+  for(int i = 1 ; i <= count ; i++) 
+    sum += i; 
+ 
+  cout << endl 
+       << "A soma dos inteiros de 1 a " << count  
+       << " é " << sum << endl; 
+ 
+  return 0; 
+} 
+ 
