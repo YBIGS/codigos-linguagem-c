@@ -1,0 +1,33 @@
+// Programa para calcular media de loop indefinido
+
+#include <iostream> 
+#include <cctype> 
+using std::cout; 
+using std::cin; 
+using std::endl; 
+ 
+int main() { 
+  char ch = 0;                         // Armazena a resposta para solicitar entrada
+  int count = 0;                       // Conta o número de valores de entrada
+  double temperature = 0.0;            // Armazena um valor de entrada
+  double average = 0.0;                // Armazena o total e a média
+ 
+  for( ; ; ) {                         // Loop indefinido 
+    cout << "Digite o valor: ";        // Solicitar entrada
+    cin >> temperature;                // Leia o valor de entrada
+    average += temperature;            // Acumular total de valores
+    count++;                           // Incrementar contagem de valores
+ 
+    cout << "Deseja inserir outro valor? (s/n): "; 
+    cin >> ch;                         // Obter resposta
+    cout << endl; 
+    if(std::tolower(ch) == 'n')        // Checar se é não
+      break;                           //se assim for terminar o loop
+
+  } 
+  cout << endl 
+       << "A média aritmetica é " << average / count 
+       << endl; 
+  return 0; 
+} 
+ 
