@@ -1,0 +1,8 @@
+#include <iostream> 
+using namespace std; 
+int main()
+{ 
+  cout << "Escreve o texto a ser exibido"; 
+  return 0; 
+} 
+ 
