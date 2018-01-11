@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int i, j, n, m;
+     //tamanho matriz
+    cin >> n >> m;
+    
+    int matriz[n][m];
+    int soma = 0;
+    
+    //escrevendo matriz
+    //i = linha
+    //j = coluna
+    for(i = 0; i < n; i++){
+        for(j = 0; j < m; j++)
+            cin >> matriz[i][j];
+    }
+
+    for(i = 0; i < n; i+=2){
+        for(j = 0; j < m; j++){
+            soma = soma + matriz[i][j];
+        }
+    }
+    cout << soma;
+    return 0;
+}
